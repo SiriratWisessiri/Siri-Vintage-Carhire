@@ -71,17 +71,19 @@
             </div>
         </div>
 
+        <div class="form">
+        <form action="/example.html" method="POST">
             <section id="enquiry">
                 <h4 class="topic">Enquiry</h4>
-                    <div class="name">
+                    <div class=" row name">
                         <label for="fullname">Your Full Name:</label>
                         <input type="text" id="fullname" name="name">
                     </div><br>
-                    <div class="name">
+                    <div class="email ">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email">
                     </div><br>
-                    <div class="choose-car">
+                    <div class="choose-car ">
                         <label for="cars">Choose a car:</label>
                             <select name="cars" id="cars">
                                 <option value="Please select the car">Please select the car</option>
@@ -91,14 +93,17 @@
                                 <option value="Vintage Car for Wedding">Vintage Car for Wedding</option>
                             </select>
                     </div><br>
-                    <div class="name">
+                    <div class="comment textfield">
                         <label for="comment">Comment:</label>
-                        <textarea name="" id="comment" cols="30" rows="5" placeholder="Please write your comment here"></textarea>
+                        <textarea class="textarea" name="comment" id="comment" placeholder="Please write your comment here"></textarea>
                     </div><br>
                     <div>
-                        <input class="button" type="submit" value="Submit">
+                        <input class="form-button button" type="submit" value="Submit">
                     </div>
             </section>
+        </form> 
+        </div>
+            
 
             <footer>
                 <div id="contact">
@@ -116,7 +121,7 @@
                 </div>
                 <section class="copyright">
                     <div>
-                        &copy;copyright SW Vintage Car Hire 2021
+                        <p>&copy;copyright SW Vintage Car Hire 2021</p>
                     </div>
                 </section>   
             </footer>

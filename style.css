@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     border: 0;
@@ -10,6 +11,7 @@ header {
     background-image: url(./img/bg3.jpg);
     width: 100vw;
     height: 100vh;
+    /* min-width: 400px; */
     background-size: cover;
     background-position: bottom;
     display:flex;
@@ -34,10 +36,11 @@ header {
 
 .navbar{
     display: inline-flex;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: #fff;
     font-family: 'Abril Fatface', cursive;
+    /* min-width: 400px; */
     
 }
 .nav-link {
@@ -47,6 +50,7 @@ header {
     font-size: 25px;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-right: 30px;
     align-items: flex-end;
 }
 
@@ -63,6 +67,7 @@ a {
 
 a:hover{
     color: #e6a5b7;
+    
 }
 
 h3, h4 {
@@ -72,7 +77,7 @@ h3, h4 {
 
 h4.topic{
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     
 }
@@ -115,7 +120,7 @@ main {
     background-color: lightgrey;
     padding: 5px;
     margin: 20px 10px;
-    padding: 0px 5px 5px 5px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: -3px -4px 4px rgb(66, 65, 65);
 }
@@ -132,10 +137,17 @@ button, .button {
     font-family: 'Abril Fatface', cursive;
     background-color: #6e1b1b;
     color: ivory;
+    
+    
+    
 
 }
-.bottom {
-    display: inline-block;
+.bottom button {
+    /* display: flex;
+    flex-shrink: 1; */
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
     /* flex-direction: column;
     align-items: center; */
     
@@ -154,6 +166,67 @@ button, .button {
     margin: 10px;
 }
 
+/* New form Css */
+ .form {
+     width: 100%;
+ }
+
+form {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    
+}
+#enquiry {
+    padding: 5px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 80em;
+    min-width: 300px;
+    flex-shrink: 1;
+
+
+}
+
+/* form .textfield {
+    position: relative;
+    width: 99%;
+} */
+
+/* .textfield, .choose-car, select, input{
+    width: 99%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px 3px;
+} */
+ input, select{
+width: 99%;
+height: 30px;
+border: none;
+outline: none;
+border-radius: 5px;
+margin: 10px 3px;
+ }
+
+.textfield .textarea{
+    width: 99%;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px 3px;
+}
+
+.form-button {
+    width:97%;
+}
+
 
 @media only screen and (max-width:500px){
     .navbar {
@@ -163,4 +236,10 @@ button, .button {
         flex-direction: column;
         width: 100%;
     }
+
+    .form {
+     max-width: 50%;
+ 
 }
+}
+
