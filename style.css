@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    border: 0;
+    background-color:#969696;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+header {
+    background-image: url(./img/bg3.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display:flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.header-content{
+    color: #6e1b1b;
+    font-size: 5vmin;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+
+.line {
+    width: 60vmin;
+    height: 2px;
+    background: #e6a5b7;
+    margin: 10px auto;
+}
+
+.navbar{
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+.nav-link {
+    display: inline-flex;
+    list-style: none;
+    float: left;
+    font-size: 25px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: flex-end;
+}
+
+   li{
+        padding-left: 80px;
+   
+}
+
+a {
+    text-decoration: none;
+    color: #6e1b1b;
+    transition-property: color;
+}
+
+a:hover{
+    color: #e6a5b7;
+}
+
+h3, h4 {
+    font-family: 'Abril Fatface', cursive;
+    color: #6e1b1b;
+}
+
+h4.topic{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.topic-line{
+    width: 100vw;
+    height: 30px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+main {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#car-hire{
+    margin: 30px 0px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 250px;
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    align-content: center;
+    box-shadow: -4px -4px 4px #424141;
+    
+}
+
+#enquiry {
+    width: 100vw;
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 20px 10px;
+    padding: 0px 5px 5px 5px;
+    border-radius: 5px;
+    box-shadow: -3px -4px 4px rgb(66, 65, 65);
+}
+
+#contact p{
+    padding: 5px;
+    margin: 10px;
+}
+
+button, .button {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Abril Fatface', cursive;
+    background-color: #6e1b1b;
+    color: ivory;
+
+}
+.bottom {
+    display: inline-block;
+    /* flex-direction: column;
+    align-items: center; */
+    
+}
+
+.copyright {
+    display: flex;
+    width: 100vw;
+    height: 30px;
+    background-color: #636060;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: ivory;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width:500px){
+    .navbar {
+        padding: 0;
+    }
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+    }
+}
